@@ -13,7 +13,7 @@ function nowServing(line) {
   }
 }
 function currentLine(line) {
-  if (katzDeliLine.length > 0) {
+  if (line.length > 0) {
   var output = "";
   for(var i = 0; i < line.length; i++) {
       output += (i + 1) + ". " + line[i] + ", ";
