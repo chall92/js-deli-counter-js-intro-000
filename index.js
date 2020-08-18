@@ -18,8 +18,10 @@ function currentLine(line) {
     for(let i = 0; i < line.length; i++) {
       output += (i + 1) + '. ' + line[i] + ', ' ;
     }
-    output = output.slice(0, -2) ;
+    return `The line is currently: ${output}`
   } else {
     return 'The line is currently empty.'
   }
 }
+
+  }
