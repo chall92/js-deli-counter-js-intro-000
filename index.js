@@ -18,7 +18,7 @@ function currentLine(line) {
     for(let i = 0; i < line.length; i++) {
       output += (i + 1) + '. ' + line[i] + ', ' ;
     }
-    output = output.slice(0, -2)
+    output = output.slice(0, -2) ;
   } else {
     return 'The line is currently empty.'
   }
