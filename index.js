@@ -22,4 +22,4 @@ function currentLine(line) {
       return `The line is currently: ${output}`;
     } else {
       return "The line is currently empty.";
-    }
+}
