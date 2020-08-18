@@ -14,7 +14,7 @@ function nowServing(line) {
 }
 function currentLine(line) {
   if (line.length > 0) {
-  var output = "";
+  var output = "" ;
   for(let i = 0; i < line.length; i++) {
       output += (i + 1) + ". " + line[i] + ", " ;
         }
