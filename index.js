@@ -12,11 +12,14 @@ function nowServing(line) {
     return 'There is nobody waiting to be served!'
   }
 }
-function currentLine() {
-  if (line.length > 0) {
-    return katzDeliLine
-  }
-  else {
-    return 'The line is currently empty.'
-  }
-}
+function currentLine(line) {
+  if (katzDeliLine.length > 0) {
+  var output = "";
+  for(var i = 0; i < katzDeliLine.length; i++) {
+      output += (i + 1) + ". " + katzDeliLine[i] + ", ";
+        }
+      output = output.slice(0, -2);
+      return `The line is currently: ${output}`;
+    } else {
+      return "The line is currently empty.";
+    }
